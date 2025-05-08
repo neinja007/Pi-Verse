@@ -1,48 +1,48 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 50px;
 }
 
 button {
-    font-size: 30px;
-    border-radius: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
+	font-size: 30px;
+	border-radius: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .blight {
-    color: black;
-    border: black solid 2px;
-    background-color: white;
+	color: black;
+	border: black solid 2px;
+	background-color: white;
 }
 
 .bdark {
-    color: white;
-    border: white solid 2px;
-    background-color: black;
+	color: white;
+	border: white solid 2px;
+	background-color: black;
 }
 
 .light {
-    background-color: white;
-    color: black;
+	background-color: white;
+	color: black;
 }
 
 .dark {
-    background-color: black;
-    color: white;
+	background-color: black;
+	color: white;
 }
 
 .correct {
-    color: green;
+	color: green;
 }
 
 .incorrect {
-    color: red;
+	color: red;
 }
 
 h1 {
-    margin-bottom: 0px;
-    margin-top: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
