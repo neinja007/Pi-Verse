@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiVerse</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="bdy" class="light">
+    <center>
+        <h1>PiVerse</h1>
+        <button class="blight" onclick="toggle_theme(true)">TOGGLE THEME</button>
+
+        <button class="blight" onclick="refresh(parseInt(window.prompt('Enter New Break Interval')))">BREAK
+            INTERVAL</button>
+
+        <button class="blight"
+            onclick="total_digits = window.prompt('Enter New Active Digit'); set_cookie('last_active',total_digits); refresh(break_interval)">ACTIVE
+            DIGIT</button>
+
+        <button class="blight"
+            onclick="total_digits = get_cookie('last_active'); refresh(break_interval)">LAST
+            (<b id="last_active"></b>)</button>
+
+        <a href="digits.pdf" target="_blank"><button class="blight" style="color: greenyellow;">1000 DIGITS
+                PDF</button></a>
+
+        <button class="blight"
+            onclick="set_cookie('last_active',total_digits); total_digits = 0; record = true; correct = true; refresh(break_interval)">RESET</button>
+
+        <button class="blight" style="color: red;" onclick="delete_cookie('', true); window.location.reload()">MEGA
+            RESET</button>
+
+
+        <br><br>
+        <b>
+            <span style="color: orange;" id="prefix">3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <br>
+            <b id="digits"></b>_<span id="spaceholder">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <br><br>
+            <b>[</b><b id="active">0</b><b>/<b id="highscore">0</b>]</b>
+        </b>
+    </center>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
